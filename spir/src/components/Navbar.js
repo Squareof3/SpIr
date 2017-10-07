@@ -6,12 +6,11 @@ const Navbar = () =>
 
 <nav className="navbar navbar-dark bg-dark">
   <div className="container-fluid">
-    <div className="navbar-header">
-      <a className="navbar-brand" href="#">SpIr</a>
-    </div>
-    <ul className="nav navbar-nav">
-      <li className="active"><a href="/">Home</a></li>
-    </ul>
+    <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/submit">Submit</a></li>
+    <li><a href="/rankings">Rankings</a></li>
+  </ul>
   </div>
 
 

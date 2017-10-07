@@ -16,14 +16,8 @@ class Home extends React.Component {
       </div>
     );
   }
-}//class Main
-
-const styles = {
-  gallery: {
-    borderStyle: 'solid',
-    margin: '20px',
-    borderRadius: '20px'
-  }
 }
+
+
 
 export default Home;
