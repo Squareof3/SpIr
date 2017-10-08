@@ -4,16 +4,16 @@ class Rankings extends React.Component {
 
   render() {
     return(
-      <div className="container">
-
-        <div className="row">
-          <div className="col-md-2"></div>
-          <div className="col-md-8" id="home" >Rankings
+        <center>
+        <div className="container">
+          <div className="jumbotron">
+            <h1>Ranking</h1>      
+            <p>Checkout the leaderboard</p>
           </div>
-          <div className="col-md-2"></div>
+           <p>This is some text.</p>      
+            <p>This is another text.</p>      
         </div>
-
-      </div>
+      </center>
     );
   }
 }

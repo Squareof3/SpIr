@@ -1,8 +1,7 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 import Navbar from './components/Navbar';
@@ -14,8 +13,6 @@ const BasicExample = () => (
   <Router>
     <div>
       <Navbar />
-
-      <hr/>
 
       <Route exact path="/" component={Home}/>
       <Route path="/submit" component={Submit}/>

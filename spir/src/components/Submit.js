@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Prompt
-} from 'react-router-dom'
+import { Prompt } from 'react-router-dom'
 
 
 
@@ -15,6 +12,10 @@ class Submit extends React.Component {
     const { isBlocking } = this.state
 
     return (
+      <center>
+      <div className="container">
+      <div className="jumbotron">
+        
       <form
         onSubmit={event => {
           event.preventDefault()
@@ -46,16 +47,25 @@ class Submit extends React.Component {
             }}
           />
         </p>
+        <br/> 
+        <br/> 
         <input name="file" type="file" multiple />
 
-
+        <br/>
+        <br/>     
         <p>
           <button>Submit</button>
         </p>
       </form>
-    )
-  }
+
+      </div>
+      </div>
+      </center>
+
+  );
 }
+}
+
 
 export default Submit
 

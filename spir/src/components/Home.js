@@ -1,19 +1,24 @@
 import React from 'react';
+import './Home.css';
+import './logo.PNG';
 
 class Home extends React.Component {
 
   render() {
     return(
-      <div className="container">
+      <center>
+        <div className="container">
+          <h1 className="logo">SpIr</h1> 
 
-        <div className="row">
-          <div className="col-md-2"></div>
-          <div className="col-md-8" id="home" >Trending
+ 
+          <div className="jumbotron">
+            <h1>Trending</h1>      
+            <p>Checkout the latest posts on SpIr</p>
           </div>
-          <div className="col-md-2"></div>
+           <p>This is some text.</p>      
+            <p>This is another text.</p>      
         </div>
-
-      </div>
+      </center>
     );
   }
 }
