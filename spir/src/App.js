@@ -20,4 +20,5 @@ const BasicExample = () => (
     </div>
   </Router>
 )
+
 export default BasicExample

@@ -9,7 +9,7 @@ const Navbar = () =>
     <a className="navbar-brand" href="/">SpIr</a>
   </div>
   <ul className="nav navbar-nav">
-    <li className="active"><a href="/">Home</a></li>
+    <li><a href="/">Home</a></li>
     <li><a href="/submit">Submit</a></li>
     <li><a href="/rankings">Rankings</a></li>
   </ul>
