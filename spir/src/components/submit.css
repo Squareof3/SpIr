@@ -1,0 +1,13 @@
+button{
+    color:black;
+}
+
+input{
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+}
+
+ul{
+    text-decoration: none;
+}
