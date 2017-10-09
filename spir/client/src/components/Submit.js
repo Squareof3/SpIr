@@ -34,7 +34,7 @@ class Submit extends React.Component {
       counter
     };
     counter++;
-    
+
     let spirs = this.state.spirs;
 
     spirs.push(spir);
@@ -46,6 +46,12 @@ class Submit extends React.Component {
 
     this.refs.spirForm.reset ();
 
+  }
+
+  handleSubmit() {
+    //hit the database & save entry
+
+    window.location.href = '/'
   }
 
   constructor() {
@@ -75,8 +81,13 @@ class Submit extends React.Component {
           </form>
           <ul>
             {spirs.map((spir => <li key={spir.counter}><br /><h3>Post Preview</h3>{spir.name}<br />{spir.place}<br />{spir.image} <hr />
-            <button onClick={this.removeSpir.bind(null, spir.counter)}>Remove Spir</button></li>))}
+            <button onClick={this.removeSpir.bind(null, spir.counter)}>Remove Spir</button><br/>
+            <button onClick={this.handleSubmit}>Submit</button>
+            </li>))}
           </ul>
+
+
+
           </div>
       </div>
       </center>
@@ -87,5 +98,3 @@ class Submit extends React.Component {
 
 
 export default Submit
-
-

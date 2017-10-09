@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Navbar = () => 
+const Navbar = () =>
 
 <nav className="navbar navbar-inverse">
 <div className="container-fluid">
@@ -14,8 +14,8 @@ const Navbar = () =>
     <li><a href="/rankings">Rankings</a></li>
   </ul>
   <ul className="nav navbar-nav navbar-right">
-    <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-    <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <li><a href="/register"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="/login"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
   </ul>
 </div>
 </nav>
