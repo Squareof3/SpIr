@@ -10,3 +10,10 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 registerServiceWorker();
+
+const routes = makeMainRoutes();
+
+ReactDOM.render(
+  routes,
+  document.getElementById('root')
+);
