@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Swipeable from 'react-swipeable';
 import './Home.css';
 
+
 const IMG_1 = `https://unsplash.it/342/249`;
 const IMG_2 = `https://unsplash.it/342/250`;
 const IMG_3 = `https://unsplash.it/342/251`;
@@ -57,7 +58,7 @@ export default class SimpleCarousel extends Component {
         </div>
         
           <div className="swipeContainer" style={{ textAlign: "center" }}>
-            <div>Image: {imageIdx + 1}</div>
+            <div>Image:{imageIdx + 1}</div>
             <Swipeable
               className="callout secondary"
               style={{ display: "inline-block", touchAction: 'none', padding: ".5rem" }}

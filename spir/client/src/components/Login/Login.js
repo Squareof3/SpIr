@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import './Login.css';
 
 class Login extends Component {
 
-  state: {
+  state = {
     username: "",
     password: ""
   }
@@ -17,7 +18,7 @@ class Login extends Component {
       password: e.password.value
     }
 
-    // console.log(credentials);
+    console.log(credentials);
 
     //Call OAuth here!
 
@@ -25,15 +26,17 @@ class Login extends Component {
 
   render() {
     return (
+      <center>
       <div>
-        <h1>Login</h1>
+        <h1 className="Title">Login</h1>
 
-        <form onSubmit={this.handleSubmit}>
+        <form className='loginForm' onSubmit={this.handleSubmit}>
           <input placeholder='Username' name='username' type='text' /><br/>
           <input placeholder='Password' name='password' type='password' /><br />
-          <button text='Submit'>Login</button>
+          <button onSubmit={this.handleSubmit} text='Submit'>Login</button>
         </form>
       </div>
+      </center>
     );
   }
 }

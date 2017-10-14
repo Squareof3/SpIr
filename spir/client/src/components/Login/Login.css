@@ -1,0 +1,15 @@
+h1{
+    font-family: 'Ribeye Marrow', cursive;
+  }
+
+  .Title{
+    color: white;
+    font-family: 'Ribeye Marrow', cursive;
+  }
+
+  .loginForm{
+      border: solid 1px #000000;
+      margin: 15px 450px;
+      padding-bottom: 15px;
+      background: #333
+  }
