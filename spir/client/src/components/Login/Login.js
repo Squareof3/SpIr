@@ -10,6 +10,7 @@ class Login extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    window.location.href = '/submit'
 
     let e = event.target
 

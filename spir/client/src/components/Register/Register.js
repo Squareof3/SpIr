@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 // var bcrypt = require('bcryptjs');
 // var salt = bcrypt.genSaltSync(10);
 // var hash = bcrypt.hashSync("B4c0/\/", salt);
@@ -12,6 +13,7 @@ class Register extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    window.location.href = '/login'
 
     let e = event.target
 
@@ -24,6 +26,20 @@ class Register extends Component {
     }
 
     console.log(credentials);
+
+    axios.post("/register", credentials, {
+      firstName: e.firstName.value,
+      lastName: e.lastName.value,
+      email: e.email.value,
+      username: e.username.value,
+      password: e.password.value
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
     //Call OAuth here!
 
@@ -41,7 +57,7 @@ class Register extends Component {
           <input placeholder='Email' name='email' type='email' /><br/>
           <input placeholder='Username' name='username' type='text' /><br/>
           <input placeholder='Password' name='password' type='password' /><br />
-          <button text='Submit'>Login</button>
+          <button onSubmit={this.handleSubmit} text='Submit'>Login</button>
         </form>
       </div>
       </center>
