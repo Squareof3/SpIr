@@ -7,7 +7,7 @@ const Promise = require("bluebird");
 
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 
 var Example = require("./models/userModel.js")
 
